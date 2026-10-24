@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Ganesh Waghmare</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: "Segoe UI", Arial, sans-serif;
+      background: #f3f7ff; color: #1b2940; line-height: 1.7;
+    }
+    .nav {
+      background: #fff; border-bottom: 1px solid #dce6f5;
+      padding: 18px 6%; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .logo { font-weight: 800; font-size: 1.15rem; color: #103b86; text-decoration: none; }
+    .logo span { color: #2670ed; }
+    .nav a.link { color: #28415f; text-decoration: none; font-weight: 600; }
+    .wrap { width: min(1000px, 90%); margin: 48px auto; }
+    .hero {
+      background: linear-gradient(135deg, #103b86, #2877ef);
+      color: white; border-radius: 24px; padding: clamp(28px, 5vw, 54px);
+      display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px;
+      box-shadow: 0 18px 45px rgba(22, 74, 155, .18);
+    }
+    .tag { display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.15); font-size: .85rem; font-weight: 700; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.12; margin: 16px 0 10px; }
+    .hero h2 { font-size: clamp(1.1rem, 2.5vw, 1.45rem); font-weight: 600; margin: 0 0 18px; color: #e2edff; }
+    .hero p { max-width: 680px; margin: 0; color: #f0f5ff; }
+    .profile-photo {
+      width: 220px; height: 220px; object-fit: cover; object-position: center;
+      border-radius: 50%; border: 5px solid white;
+      box-shadow: 0 12px 30px rgba(0,0,0,.18);
+      background: #dceaff;
+    }
+    .section-title { margin: 42px 0 18px; color: #103b86; font-size: 1.8rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { background: white; border: 1px solid #dce6f5; border-radius: 17px; padding: 24px; }
+    .card h3 { margin: 0 0 9px; color: #1457bd; font-size: 1.15rem; }
+    .card p { margin: 0; color: #52627a; }
+    .skills { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
+    .chip { padding: 7px 11px; border-radius: 8px; background: #eaf2ff; border: 1px solid #d6e5ff; color: #174ba9; font-size: .9rem; font-weight: 650; }
+    .project { margin-bottom: 15px; }
+    .project:last-child { margin-bottom: 0; }
+    .project h3 { margin-bottom: 5px; }
+    .project p { margin-bottom: 9px; }
+    ul { color: #52627a; padding-left: 20px; margin: 8px 0 0; }
+    .contact { margin-top: 34px; padding: 26px; border-radius: 18px; background: #e5efff; border: 1px solid #d0e1ff; }
+    .contact h2 { color: #103b86; margin: 0 0 8px; }
+    .contact p { margin: 5px 0; overflow-wrap: anywhere; }
+    .contact a { color: #1457bd; font-weight: 700; }
+    footer { text-align: center; padding: 20px; color: #687890; font-size: .9rem; }
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; }
+      .profile-photo { width: 130px; height: 130px; grid-row: 1; }
+      .grid { grid-template-columns: 1fr; }
+      .wrap { margin: 26px auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">Ganesh <span>Waghmare</span></a>
+    <a class="link" href="index.html">← Back to Portfolio</a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <span class="tag">ABOUT ME</span>
+        <h1>Hi, I'm Ganesh Waghmare.</h1>
+        <h2>Aspiring Data Analyst | BSc Data Science Student</h2>
+        <p>
+          I am an aspiring Data Analyst with a foundation in Python, SQL, R, Excel and Power BI.
+          I enjoy cleaning data, exploring patterns, performing statistical analysis and building
+          dashboards that turn raw information into clear business insights. I want to keep improving
+          my analytical skills and use data to support better decisions.
+        </p>
+      </div>
+      <img class="profile-photo" src="photo.jpeg" alt="Ganesh Waghmare profile photo">
+    </section>
+
+    <h2 class="section-title">My Background</h2>
+    <section class="grid">
+      <article class="card">
+        <h3>Education</h3>
+        <p><strong>BSc in Data Science</strong><br>Savitribai Phule Pune University, Pune<br>2025 – Present</p>
+        <p style="margin-top:10px"><strong>HSC</strong> · 2023–2025</p>
+        <p><strong>SSC</strong> · 2022–2023</p>
+        <p><strong>Aspering Data Science</strong>.2025-2028</p>
+      </article>
+      <article class="card">
+        <h3>Internship Experience</h3>
+        <p><strong>Data Analytics Intern — Internship Studio</strong><br>April 2026 – October 2026</p>
+        <ul>
+          <li>Cleaned, transformed and validated business datasets using Python, SQL and Excel.</li>
+          <li>Performed exploratory data analysis to identify trends and patterns.</li>
+          <li>Created charts and Power BI dashboards to track key metrics.</li>
+          <li>Documented analysis and summarized findings for mentor review.</li>
+        </ul>
+      </article>
+    </section>
+
+    <h2 class="section-title">My Technical Skills</h2>
+    <section class="grid">
+      <article class="card">
+        <h3>Programming & Data Analysis</h3>
+        <div class="skills">
+          <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
+          <span class="chip">SQL</span><span class="chip">R</span><span class="chip">SciPy</span>
+          <span class="chip">Data Cleaning</span><span class="chip">EDA</span>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Visualization & Databases</h3>
+        <div class="skills">
+          <span class="chip">Power BI</span><span class="chip">Advanced Excel</span>
+          <span class="chip">Power Query</span><span class="chip">Pivot Tables</span>
+          <span class="chip">Matplotlib</span><span class="chip">Seaborn</span>
+          <span class="chip">SQLite</span><span class="chip">MongoDB</span>
+          <span class="chip">Redis</span><span class="chip">Cassandra</span><span class="chip">Neo4j</span>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="section-title">My Projects</h2>
+    <section class="card">
+      <div class="project">
+        <h3>1. Vendor Performance Analysis</h3>
+        <p><strong>Tools:</strong> Python, SQL, SQLite, SQLAlchemy, Pandas, Matplotlib, Seaborn, Power BI</p>
+        <ul>
+          <li>Combined data from six SQLite tables to create a vendor-sales summary.</li>
+          <li>Cleaned the dataset and retained 1,316 valid vendor-brand records.</li>
+          <li>Analyzed vendor and brand performance, profit margins, purchase share and inventory turnover.</li>
+          <li>Used a two-sample t-test to identify a statistically significant profit-margin difference between vendor groups.</li>
+          <li>Built a Power BI dashboard with sales KPIs and vendor/brand performance.</li>
+        </ul>
+        <p style="margin-top:12px"><a href="https://github.com/ganeshwaghmare0810-ship-it/Vendor_Sales_Dataanalisis_Project" target="_blank" rel="noopener noreferrer">View my GitHub project →</a></p>
+      </div>
+      <hr style="border:0;border-top:1px solid #e1eaf7;margin:22px 0">
+      <div class="project">
+        <h3>2. HR Analytics</h3>
+        <p><strong>Tools:</strong> SQL, Advanced Excel, Python, R</p>
+        <ul>
+          <li>Analyzed employee attrition, performance and workforce trends.</li>
+          <li>Built predictive models and evaluated them using accuracy, precision and recall.</li>
+          <li>Designed Excel dashboards for retention, hiring trends and productivity KPIs.</li>
+          <li>Applied data cleaning, hypothesis testing and correlation analysis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2 class="section-title">Certifications</h2>
+    <section class="grid">
+      <article class="card">
+        <h3>Data Analytics Internship</h3>
+        <p>Internship Studio · Issued 3 October 2026</p>
+      </article>
+      <article class="card">
+        <h3>HR Analytics Course</h3>
+        <p>Simplilearn Skill Up</p>
+      </article>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> <a href="mailto:ganeshwaghmare0810@gmail.com">ganeshwaghmare0810@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919529579858">+91-9529579858</a></p>
+     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">Linkdin</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Ganesh Waghmare · About Me</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
